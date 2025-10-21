@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # Имя сервиса изменено для отражения запускаемого бота
   librusec_bot: 
     # Имя контейнера
     container_name: librusec-base-bot # Изменено для ясности
@@ -31,4 +30,5 @@ services:
       READER_FOLDER: /app/data/reader
       DOWNLOAD_FOLDER: /app/data/downloads
       USERS_JSON_FILE: /app/data/users_librusec.json
-      DB_FILE: /app/data/reader_data_librusec.db
+      DB_FILE: /app/data/reader_data.db
+      PENDING_USERS_JSON_FILE: /app/data/pending_users_librusec.json
